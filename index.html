@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Pages Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Successfully Deployed!</h1>
+            <p class="subtitle">Your static site is live on GitHub Pages</p>
+        </header>
+        <main>
+            <section class="card">
+                <h2>Cheapest & Easiest Cloud Deployment</h2>
+                <p>This page was deployed using <strong>GitHub Pages</strong> – a free, simple, and reliable static hosting service.</p>
+                <ul>
+                    <li><strong>Zero cost</strong> – GitHub Pages is completely free for public repositories.</li>
+                    <li><strong>Global CDN</strong> – served fast worldwide via GitHub's infrastructure.</li>
+                    <li><strong>Automatic updates</strong> – just push changes to your repository.</li>
+                    <li><strong>Custom domain support</strong> – you can add your own domain anytime.</li>
+                </ul>
+                <p>To customize this page, edit the <code>index.html</code> and <code>style.css</code> files in your repository.</p>
+            </section>
+            <section class="card">
+                <h2>Next Steps</h2>
+                <ol>
+                    <li>Replace this content with your own HTML/CSS/JS.</li>
+                    <li>Commit and push changes to update the live site.</li>
+                    <li>Optionally, add a custom domain in repository Settings → Pages.</li>
+                </ol>
+                <p>Need help? Check the <a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages documentation</a>.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Deployed with ❤️ using the cheapest & easiest cloud method.</p>
+            <p class="small">Page automatically generated on <span id="date"></span>.</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric', month: 'long', day: 'numeric'
+        });
+    </script>
+</body>
+</html>
