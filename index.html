@@ -6,9 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0">
     <title>Tiago Maia</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@govbr-ds/webcomponents@1.21.3/dist/webcomponents.umd.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -22,27 +20,35 @@
         </header>
         
         <main>
-            <section class="card">
-                <h2>🚀 Successfully Deployed!</h2>
-                <p class="subtitle">Your static site is live on GitHub Pages</p>
-                <p>This page was deployed using <strong>GitHub Pages</strong> – a free, simple, and reliable static hosting service.</p>
-                <ul>
-                    <li><strong>Zero cost</strong> – GitHub Pages is completely free for public repositories.</li>
-                    <li><strong>Global CDN</strong> – served fast worldwide via GitHub's infrastructure.</li>
-                    <li><strong>Automatic updates</strong> – just push changes to your repository.</li>
-                    <li><strong>Custom domain support</strong> – you can add your own domain anytime.</li>
-                </ul>
-                <p>To customize this page, edit the <code>index.html</code> and <code>style.css</code> files in your repository.</p>
-            </section>
-            <section class="card">
-                <h2>Next Steps</h2>
-                <ol>
-                    <li>Replace this content with your own HTML/CSS/JS.</li>
-                    <li>Commit and push changes to update the live site.</li>
-                    <li>Optionally, add a custom domain in repository Settings → Pages.</li>
-                </ol>
-                <p>Need help? Check the <a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages documentation</a>.</p>
-            </section>
+            <govbr-card>
+                <div slot="header">
+                    <h2>🚀 Successfully Deployed!</h2>
+                    <p class="subtitle">Your static site is live on GitHub Pages</p>
+                </div>
+                <div slot="content">
+                    <p>This page was deployed using <strong>GitHub Pages</strong> – a free, simple, and reliable static hosting service.</p>
+                    <ul>
+                        <li><strong>Zero cost</strong> – GitHub Pages is completely free for public repositories.</li>
+                        <li><strong>Global CDN</strong> – served fast worldwide via GitHub's infrastructure.</li>
+                        <li><strong>Automatic updates</strong> – just push changes to your repository.</li>
+                        <li><strong>Custom domain support</strong> – you can add your own domain anytime.</li>
+                    </ul>
+                    <p>To customize this page, edit the <code>index.html</code> and <code>style.css</code> files in your repository.</p>
+                </div>
+            </govbr-card>
+            <govbr-card>
+                <div slot="header">
+                    <h2>Next Steps</h2>
+                </div>
+                <div slot="content">
+                    <ol>
+                        <li>Replace this content with your own HTML/CSS/JS.</li>
+                        <li>Commit and push changes to update the live site.</li>
+                        <li>Optionally, add a custom domain in repository Settings → Pages.</li>
+                    </ol>
+                    <p>Need help? Check the <a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages documentation</a>.</p>
+                </div>
+            </govbr-card>
         </main>
         <footer>
             <p>Deployed with ❤️ using the cheapest & easiest cloud method.</p>

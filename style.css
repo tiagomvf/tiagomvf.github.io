@@ -5,21 +5,17 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
+    background: var(--background);
+    color: var(--color);
 }
+
+
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     padding: 40px;
 }
 
@@ -27,7 +23,7 @@ header {
     text-align: center;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--border-color);
 }
 
 .personal-links {
@@ -43,94 +39,33 @@ header {
     margin: 0;
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: #2d3748;
-    margin-bottom: 10px;
-}
-
 .subtitle {
-    font-size: 1.2rem;
-    color: #718096;
+    color: var(--color-secondary-06);
+    margin-top: 8px;
 }
 
-.card {
-    background: #f8fafc;
-    border-radius: 12px;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-left: 4px solid #667eea;
-}
-
-h2 {
-    color: #2d3748;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-}
-
-p {
-    margin-bottom: 15px;
-    color: #4a5568;
-}
-
-ul, ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-    color: #4a5568;
-}
-
-strong {
-    color: #2d3748;
-}
-
-code {
-    background: #edf2f7;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-    color: #2d3748;
-}
-
-a {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-a:hover {
-    text-decoration: underline;
+govbr-card {
+    margin-bottom: 24px;
+    display: block;
 }
 
 footer {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 2px solid #f0f0f0;
-    color: #718096;
+    border-top: 2px solid var(--border-color);
+    color: var(--color-secondary-06);
     font-size: 0.95rem;
 }
 
 .small {
     font-size: 0.85rem;
-    color: #a0aec0;
+    color: var(--color-secondary-05);
     margin-top: 10px;
 }
 
 @media (max-width: 768px) {
     .container {
         padding: 20px;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.3rem;
     }
 }
