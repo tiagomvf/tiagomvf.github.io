@@ -30,6 +30,19 @@ header {
     border-bottom: 2px solid #f0f0f0;
 }
 
+.personal-links {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.personal-links li {
+    margin: 0;
+}
+
 h1 {
     font-size: 2.5rem;
     color: #2d3748;
